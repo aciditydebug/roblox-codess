@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RBX Code Hub - Blox Fruits Codes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>RBX Code Hub</h1>
+        <p>Latest Blox Fruits Codes</p>
+    </header>
+
+    <div class="filter-buttons">
+        <button onclick="filterCodes('all')">All</button>
+        <button onclick="filterCodes('xp')">XP Boost</button>
+        <button onclick="filterCodes('reset')">Stat Reset</button>
+    </div>
+
+    <div class="codes-container" id="codesContainer">
+
+        <div class="code-card xp">
+            <h2>2x XP Boost</h2>
+            <p class="code">SUB2GAMERROBOT_EXP1</p>
+            <button onclick="copyCode(this)">Copy Code</button>
+            <span class="active">Active</span>
+        </div>
+
+        <div class="code-card reset">
+            <h2>Stat Reset</h2>
+            <p class="code">SUB2UNCLEKIZARU</p>
+            <button onclick="copyCode(this)">Copy Code</button>
+            <span class="active">Active</span>
+        </div>
+
+        <div class="code-card xp">
+            <h2>2x XP Boost</h2>
+            <p class="code">AXIORE</p>
+            <button onclick="copyCode(this)">Copy Code</button>
+            <span class="expired">Expired</span>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Not affiliated with Roblox or Blox Fruits.</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

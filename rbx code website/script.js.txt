@@ -1,0 +1,20 @@
+function copyCode(button) {
+    const code = button.parentElement.querySelector(".code").innerText;
+    navigator.clipboard.writeText(code);
+    button.innerText = "Copied!";
+    setTimeout(() => {
+        button.innerText = "Copy Code";
+    }, 2000);
+}
+
+function filterCodes(type) {
+    const cards = document.querySelectorAll(".code-card");
+
+    cards.forEach(card => {
+        if (type === "all") {
+            card.style.display = "block";
+        } else {
+            card.style.display = card.classList.contains(type) ? "block" : "none";
+        }
+    });
+}
